@@ -1,16 +1,33 @@
-# React + Vite
+# Poonam Kashide - Web Development Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, fast, and fully responsive personal portfolio website built to showcase web development projects, landing pages, and performance marketing campaigns. 
 
-Currently, two official plugins are available:
+This project was built using **React** and **Vite**, transitioning from a static HTML/CSS layout into a scalable, component-driven architecture.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+* **Dynamic Project Rendering:** Projects are powered by a single configuration array, automatically mapping data into an alternating left/right layout.
+* **Modern UI/UX:** Features a sticky glassmorphism navigation bar, smooth hover animations, and subtle glowing shadow effects.
+* **Fully Responsive:** Custom CSS ensures a seamless experience across desktop, tablet, and mobile devices.
+* **Blazing Fast:** Bootstrapped with Vite for instant server start and highly optimized production builds.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+* **Framework:** React (Functional Components)
+* **Build Tool:** Vite
+* **Styling:** Custom standard CSS 
+* **Deployment Ready:** Configured to be easily hosted on Vercel, Netlify, or GitHub Pages.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing.
+
+### Prerequisites
+
+You will need **Node.js** installed on your computer. You can download it from [nodejs.org](https://nodejs.org/).
+
+### Installation
+
+**Clone the repository** (or download the source code):
+   ```bash
+   git clone [https://github.com/mdmbypoonam/poonam-portfolio.git](https://github.com/mdmbypoonam/poonam-portfolio.git)
