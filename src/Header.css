@@ -1,0 +1,62 @@
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(18, 18, 18, 0.85); /* Dark background with glassmorphism transparency */
+  backdrop-filter: blur(10px); /* Modern blur effect */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.header-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Brand / Name */
+.navbar-brand {
+  color: #ffffff;
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 800; /* font-extrabold */
+  letter-spacing: -0.025em; /* tracking-tight */
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Call to Action Button */
+.navbar-cta {
+  background: linear-gradient(45deg, #00dbde, #fc00ff);
+  color: #ffffff;
+  padding: 0.625rem 1.25rem; /* py-2.5 px-5 */
+  border-radius: 9999px; /* rounded-full */
+  font-size: 0.75rem; /* text-xs */
+  font-weight: 600; /* font-semibold */
+  text-transform: uppercase;
+  letter-spacing: 0.05em; /* tracking-wider */
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+}
+
+.navbar-cta:hover {
+  background: linear-gradient(95deg, #00dbde, #fc00ff);
+  font-size: 0.75rem; /* text-xs */
+  font-weight: 700; /* font-semibold */
+}
+
+/* Mobile responsive optimization */
+@media (max-width: 480px) {
+  .header-container {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+  
+  .nav-menu {
+    gap: 20px;
+  }
+}

@@ -1,0 +1,150 @@
+/* Core Layout Styling */
+.portfolio-section {
+  background-color: #121212;
+  color: #ffffff;
+  padding: 80px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.section-heading {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px auto;
+}
+
+.section-heading h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  background: linear-gradient(45deg, #00dbde, #fc00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-heading p {
+  color: #a0a0a0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.portfolio-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Flexbox Alternating Row Magic */
+.project-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+  gap: 50px;
+}
+
+.row-normal {
+  flex-direction: row;
+}
+
+.row-reversed {
+  flex-direction: row-reverse;
+}
+
+/* Image Showcase Styling & Interaction */
+.project-image-box {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.project-image-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 219, 222, 0.2);
+}
+
+.project-image-box:hover .project-img {
+  transform: scale(1.04);
+}
+
+/* Project Text Details Styling */
+.project-details-box {
+  flex: 1;
+}
+
+.project-details-box h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.project-details-box p {
+  color: #cdcdcd;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* Button & Actions Styling */
+.btn-group {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn-live, .btn-github {
+  padding: 12px 24px;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-live {
+  background: linear-gradient(45deg, #00dbde, #fc00ff);
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 219, 222, 0.3);
+}
+
+.btn-live:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(252, 0, 255, 0.5);
+}
+
+.btn-github {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #333333;
+}
+
+.btn-github:hover {
+  background-color: #333333;
+  border-color: #555555;
+  transform: translateY(-2px);
+}
+
+/* Responsive Overrides for Tablets and Mobile Devices */
+@media (max-width: 768px) {
+  .project-row {
+    flex-direction: column !important; /* Forces uniform image-top, text-bottom layout on small screens */
+    gap: 30px;
+    margin-bottom: 70px;
+  }
+  
+  .section-heading h2 {
+    font-size: 2rem;
+  }
+
+  .project-details-box h3 {
+    font-size: 1.5rem;
+  }
+}
