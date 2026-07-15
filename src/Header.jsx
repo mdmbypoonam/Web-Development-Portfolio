@@ -6,7 +6,7 @@ export default function Header() {
     <header className="site-header">
       <div className="header-container">
         {/* Logo/Brand */}
-        <a href="index.html" className="navbar-brand">
+        <a href="https://adswithpoonam.vercel.app/" className="navbar-brand">
           Poonam Kashide
         </a>
 
